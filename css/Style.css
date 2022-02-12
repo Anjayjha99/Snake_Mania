@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Supermercado+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+#board{
+    background: linear-gradient(rgb(133, 224, 133),rgb(132, 136, 189));
+    height: 90vmin;
+    width: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+#score{
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    font-size: 3rem;
+    font-family: 'Supermercado One', cursive;
+    /* font-family: 'Luxurious Roman', cursive; */
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    font-size:3rem;
+    font-family: 'Supermercado One', cursive;
+    /* font-family: 'Luxurious Roman', cursive; */
+}
+
+.snakehead{
+    background: url('../img/snake-head.webp');
+    background-size: cover;
+    transform: scale(1.8);
+    border-radius: 25%;
+}
+.snakebody{
+    background: linear-gradient(green,rgb(91, 238, 157));
+    border: 20% solid rgb(44, 43, 43);
+    border-radius: 35%;
+}
+.snakefood{ 
+    background: linear-gradient(red, purple);
+    border-radius: 35%;
+    border: 2px solid black;
+}
